@@ -1,0 +1,112 @@
+nav{
+  margin: 0px;
+  min-height: 8vh;
+  height: 8vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: $nav-font;
+  font-weight: 700;
+  background-color: $base-color;
+}
+
+.logo{
+  color: #000;
+  margin-left: 30px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  min-width: 50%;
+  list-style: none;  
+  font-size: 15px; 
+}
+
+.nav-links a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: $grey;
+  transition: all 0.2s ease;
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+.burger{
+  display: none;
+  cursor: pointer;
+  
+}
+
+.burger div{
+  margin-top: 5px;
+  width: 25px;
+  height: 3px;
+  background-color: $grey;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width : 768px){
+  nav{
+    justify-content: space-around;
+  }
+
+  .nav-links{
+    position: absolute;
+    right: 0;
+    height: 92vh;
+    top: 8vh;
+    width: 50vw;
+    background-color: $base-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+        
+  }
+
+  .nav-links li{
+    opacity: 0;
+}
+
+  .burger{
+    display: block;
+  }
+}
+
+.nav-active{
+  transform: translateX(0%);
+  
+}
+
+@keyframes navLinksFade{
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/* for burger animation */
+
+.toggle .line1{
+  transform: rotate(45deg) translate(5px, 6px);
+}
+.toggle .line2{
+  transform: translateX(40%);
+  opacity: 0;
+}
+.toggle .line3{
+  transform: rotate(-45deg) translate(5px, -6px);
+}

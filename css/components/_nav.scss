@@ -36,7 +36,7 @@ nav{
   text-transform: uppercase;
   font-size: 18px;
   color: $grey;
-  transition: all 0.2s ease;
+  transition: color 0.2s ease;
   &:hover {
     color: $accent-color;
   }
@@ -60,6 +60,12 @@ nav{
 }
 
 @media screen and (max-width : 768px){
+  .nav-links a{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width : 600px){
   nav{
     justify-content: space-between;
     box-shadow: 0 3px 4px lighten($grey, 27%);
@@ -78,6 +84,10 @@ nav{
     align-items: center;
     transform: translateX(100%);
         
+  }
+
+  .nav-links a{
+    font-size: 18px;
   }
 
   .nav-links li{

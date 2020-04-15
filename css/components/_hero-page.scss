@@ -17,9 +17,9 @@
   float: left;
   position: absolute;
   transform: rotate(-90deg);
-  white-space: nowrap; 
+  white-space: nowrap;
   left: -40px;
-  top: 150px;
+  top: 130px;
   font-family: $header-font;
   color: $light-grey;
   font-size: 40px;
@@ -30,6 +30,7 @@
   position: absolute;
   right: 25px;
   bottom: 10px;
+
   img {
     width: 60px;
   }
@@ -51,10 +52,12 @@
 .hero__main-text {
   text-align: center;
   margin-top: 20px;
+
   h2 {
     font-family: $header-font;
     font-size: 34px;
   }
+
   p {
     margin-top: 10px;
     font-family: $mono-font;
@@ -74,17 +77,19 @@
     width: 250px;
   }
 
-  .hero__main-text{
-    h2{
+  .hero__main-text {
+    h2 {
       font-size: 45px;
     }
-    p{
+
+    p {
       font-size: 18px;
     }
   }
 
   .side-asset {
     right: 40px;
+
     img {
       width: 80px;
     }
@@ -106,20 +111,23 @@
     width: 250px;
   }
 
-  .hero__main-text{
+  .hero__main-text {
     text-align: left;
     margin-top: 0;
     margin-left: 50px;
-    h2{
+
+    h2 {
       font-size: 45px;
     }
-    p{
+
+    p {
       font-size: 18px;
     }
   }
 
   .side-asset {
     right: 40px;
+
     img {
       width: 80px;
     }

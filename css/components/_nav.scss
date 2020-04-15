@@ -1,4 +1,4 @@
-nav{
+nav {
   position: fixed;
   z-index: 999;
   margin: 0px;
@@ -13,7 +13,7 @@ nav{
   background-color: $base-color;
 }
 
-.logo{
+.logo {
   color: #000;
   margin-left: 30px;
   text-transform: uppercase;
@@ -22,56 +22,58 @@ nav{
   font-weight: 700;
 }
 
-.nav-links{
+.nav-links {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   min-width: 50%;
-  list-style: none;  
-  font-size: 15px; 
+  list-style: none;
+  font-size: 15px;
 }
 
-.nav-links a{
+.nav-links a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 18px;
   color: $grey;
   transition: color 0.2s ease;
+
   &:hover {
     color: $accent-color;
   }
 }
 
-.burger{
+.burger {
   display: none;
   cursor: pointer;
-  
+
 }
 
-.burger div{
+.burger div {
   margin-top: 5px;
   width: 23px;
   height: 3.2px;
   background-color: $grey;
   transition: all 0.3s ease;
-  &:nth-child(2){
+
+  &:nth-child(2) {
     width: 18px;
   }
 }
 
-@media screen and (max-width : 768px){
-  .nav-links a{
+@media screen and (max-width : 768px) {
+  .nav-links a {
     font-size: 14px;
   }
 }
 
-@media screen and (max-width : 600px){
-  nav{
+@media screen and (max-width : 600px) {
+  nav {
     justify-content: space-between;
     box-shadow: 0 3px 4px lighten($grey, 27%);
   }
 
-  .nav-links{
+  .nav-links {
     position: absolute;
     right: 0;
     height: 92vh;
@@ -83,34 +85,35 @@ nav{
     flex-direction: column;
     align-items: center;
     transform: translateX(100%);
-        
+
   }
 
-  .nav-links a{
+  .nav-links a {
     font-size: 18px;
   }
 
-  .nav-links li{
+  .nav-links li {
     opacity: 0;
-}
+  }
 
-  .burger{
+  .burger {
     display: block;
     margin-right: 20px;
   }
 }
 
-.nav-active{
+.nav-active {
   transform: translateX(0%);
-  
+
 }
 
-@keyframes navLinksFade{
-  from{
+@keyframes navLinksFade {
+  from {
     opacity: 0;
     transform: translateX(50px);
   }
-  to{
+
+  to {
     opacity: 1;
     transform: translateX(0px);
   }
@@ -118,13 +121,15 @@ nav{
 
 /* for burger animation */
 
-.toggle .line1{
+.toggle .line1 {
   transform: rotate(405deg) translate(6px, 6px);
 }
-.toggle .line2{
+
+.toggle .line2 {
   transform: translateX(40%);
   opacity: 0;
 }
-.toggle .line3{
+
+.toggle .line3 {
   transform: rotate(-405deg) translate(6px, -6px);
 }

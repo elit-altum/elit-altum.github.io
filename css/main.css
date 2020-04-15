@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@700&family=Roboto+Mono&display=swap");
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -11,9 +11,8 @@ body {
 }
 
 nav {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+  position: fixed;
+  z-index: 999;
   margin: 0px;
   min-height: 8vh;
   height: 8vh;
@@ -76,23 +75,31 @@ nav {
 
 .burger div {
   margin-top: 5px;
-  width: 25px;
-  height: 3px;
+  width: 23px;
+  height: 3.2px;
   background-color: #a9a9a9;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
+.burger div:nth-child(2) {
+  width: 18px;
+}
+
 @media screen and (max-width: 768px) {
   nav {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-shadow: 0 3px 4px #eeeeee;
+            box-shadow: 0 3px 4px #eeeeee;
   }
   .nav-links {
     position: absolute;
     right: 0;
     height: 92vh;
     top: 8vh;
+    z-index: 999;
     width: 50vw;
     background-color: #fff;
     display: -webkit-box;
@@ -113,6 +120,7 @@ nav {
   }
   .burger {
     display: block;
+    margin-right: 20px;
   }
 }
 
@@ -149,8 +157,8 @@ nav {
 
 /* for burger animation */
 .toggle .line1 {
-  -webkit-transform: rotate(45deg) translate(5px, 6px);
-          transform: rotate(45deg) translate(5px, 6px);
+  -webkit-transform: rotate(405deg) translate(6px, 6px);
+          transform: rotate(405deg) translate(6px, 6px);
 }
 
 .toggle .line2 {
@@ -160,41 +168,11 @@ nav {
 }
 
 .toggle .line3 {
-  -webkit-transform: rotate(-45deg) translate(5px, -6px);
-          transform: rotate(-45deg) translate(5px, -6px);
+  -webkit-transform: rotate(-405deg) translate(6px, -6px);
+          transform: rotate(-405deg) translate(6px, -6px);
 }
 
-.hero-page {
-  min-width: 100vw;
-  min-height: 92vh;
-  width: 100vw;
-  height: 92vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.side-navigator p {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  color: #c1c1c1;
-  font-family: "Lora", serif;
-  left: 0;
-  height: 100%;
-  margin-left: -10vh;
-  opacity: 0.7;
-  font-size: 8vh;
-}
-
-.hero__main {
-  -ms-flex-item-align: center;
-      align-self: center;
+.section-page {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -204,147 +182,76 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  min-width: 100vw;
+  min-height: 100vh;
+  width: 100vw;
+  height: 92vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.side-navigator {
+  display: block;
+  float: left;
+  position: absolute;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  white-space: nowrap;
+  left: -40px;
+  top: 130px;
+  font-family: "Lora", serif;
+  color: #c1c1c1;
+  font-size: 40px;
+  opacity: 0.6;
+}
+
+.side-asset {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.side-asset img {
+  width: 60px;
+}
+
+.hero__main {
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .hero__main-img img {
-  width: 250px;
-  height: 250px;
+  width: 200px;
   border-radius: 50%;
 }
 
 .hero__main-text {
-  margin-left: 50px;
-  z-index: 999;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .hero__main-text h2 {
   font-family: "Lora", serif;
-  font-size: 60px;
+  font-size: 34px;
 }
 
 .hero__main-text p {
-  font-family: "Roboto Mono", monospace;
   margin-top: 10px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 14px;
   color: #333;
-}
-
-.side-asset {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-}
-
-.side-asset img {
-  width: 100px;
-  margin-right: 70px;
-}
-
-@media only screen and (max-width: 1100px) {
-  .side-navigator p {
-    font-size: 5.6vh;
-    margin-left: -6vh;
-  }
-  .hero__main-img img {
-    width: 200px;
-    height: 200px;
-  }
-  .hero__main-text h2 {
-    font-size: 50px;
-  }
-  .hero__main-text p {
-    margin-top: 10px;
-  }
-  .side-asset img {
-    width: 80px;
-  }
-}
-
-@media only screen and (max-width: 890px) {
-  .side-navigator p {
-    font-size: 5.6vh;
-    margin-left: -6vh;
-  }
-  .hero__main-img img {
-    margin-left: 30px;
-    width: 150px;
-    height: 150px;
-  }
-  .hero__main-text {
-    margin-top: 10px;
-  }
-  .hero__main-text h2 {
-    font-size: 35px;
-    text-align: center;
-  }
-  .hero__main-text p {
-    margin-top: 10px;
-    text-align: center;
-  }
-  .side-asset img {
-    width: 60px;
-  }
-}
-
-@media only screen and (max-width: 770px) {
-  .side-navigator p {
-    font-size: 5.6vh;
-    margin-left: -6vh;
-  }
-  .hero__main-img img {
-    width: 150px;
-    height: 150px;
-  }
-  .hero__main {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .hero__main-text h2 {
-    font-size: 40px;
-  }
-  .hero__main-text p {
-    margin-top: 10px;
-  }
-  .side-asset img {
-    width: 60px;
-  }
-}
-
-@media only screen and (max-width: 642px) {
-  .side-navigator {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-    margin-top: 100px;
-  }
-  .side-navigator p {
-    font-size: 4vh;
-    margin-left: -2vh;
-  }
-  .hero__main-img img {
-    width: 150px;
-    height: 150px;
-    margin-left: -20px;
-  }
-  .hero__main {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .hero__main-text {
-    margin-left: 0px;
-  }
-  .hero__main-text h2 {
-    font-size: 30px;
-  }
-  .hero__main-text p {
-    margin-top: 10px;
-    font-size: 16px;
-  }
-  .side-asset img {
-    width: 40px;
-    margin-right: 30px;
-    margin-top: -40px;
-  }
 }
 /*# sourceMappingURL=main.css.map */

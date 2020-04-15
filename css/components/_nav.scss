@@ -1,6 +1,6 @@
 nav{
-  position: sticky;
-  top: 0;
+  position: fixed;
+  z-index: 999;
   margin: 0px;
   min-height: 8vh;
   height: 8vh;
@@ -50,15 +50,19 @@ nav{
 
 .burger div{
   margin-top: 5px;
-  width: 25px;
-  height: 3px;
+  width: 23px;
+  height: 3.2px;
   background-color: $grey;
   transition: all 0.3s ease;
+  &:nth-child(2){
+    width: 18px;
+  }
 }
 
 @media screen and (max-width : 768px){
   nav{
-    justify-content: space-around;
+    justify-content: space-between;
+    box-shadow: 0 3px 4px lighten($grey, 27%);
   }
 
   .nav-links{
@@ -66,6 +70,7 @@ nav{
     right: 0;
     height: 92vh;
     top: 8vh;
+    z-index: 999;
     width: 50vw;
     background-color: $base-color;
     display: flex;
@@ -81,6 +86,7 @@ nav{
 
   .burger{
     display: block;
+    margin-right: 20px;
   }
 }
 
@@ -103,12 +109,12 @@ nav{
 /* for burger animation */
 
 .toggle .line1{
-  transform: rotate(45deg) translate(5px, 6px);
+  transform: rotate(405deg) translate(6px, 6px);
 }
 .toggle .line2{
   transform: translateX(40%);
   opacity: 0;
 }
 .toggle .line3{
-  transform: rotate(-45deg) translate(5px, -6px);
+  transform: rotate(-405deg) translate(6px, -6px);
 }

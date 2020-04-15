@@ -11,6 +11,11 @@ nav {
   font-family: $nav-font;
   font-weight: 700;
   background-color: $base-color;
+  transition: all 0.3s ease;
+}
+
+.scrolled {
+  box-shadow: 0 3px 4px lighten($grey, 27%);
 }
 
 .logo {

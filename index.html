@@ -31,7 +31,7 @@
 
   <!-- Hero Page -->
   <div class="section-page">
-    <div class="side-navigator">
+    <div class="side-navigator parallax">
       <p>00.Intro</p>
     </div>
     <div class="hero__main">
@@ -43,14 +43,14 @@
         <p>Designer | Developer | Programmer </p>
       </div>
     </div>
-    <div class="side-asset">
+    <div class="side-asset rellax" data-rellax-speed="2">
       <img src="./assets/bottom-arrow.png">
     </div>
   </div>
 
   <!-- About Page -->
   <div class="section-page">
-    <div class="side-navigator-about">
+    <div class="side-navigator-about parallax">
       <p>01.About</p>
     </div>
     <div class="about__main">
@@ -65,13 +65,18 @@
         </p>
       </div>
     </div>
-    <div class="side-asset-about">
+    <div class="side-asset-about rellax" data-rellax-speed="1.6">
       <img src="./assets/dot-rectangle.png">
     </div>
   </div>
 
 
   <script src="./js/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+  <script>
+    // rellax initializing for parallax effects 
+    var rellax = new Rellax('.rellax');
+  </script>
 </body>
 
 </html>

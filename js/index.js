@@ -27,3 +27,21 @@ const navSlide = function () {
 }
 
 navSlide();
+
+// adds box-shadow to nav-bar on scroll
+window.addEventListener('scroll', () => {
+  const nav = document.querySelector('nav');
+  if (window.scrollY > 60) {
+    nav.classList.add('scrolled');   
+  } else {
+    nav.classList.remove('scrolled')
+  }
+
+  // for side-navigation
+  const sides = document.querySelectorAll('.parallax');
+  sides.forEach( (side, index) => {
+    let topScroller = (-0.08 * window.scrollY) / ((index + 1))
+    side.style.transform = `rotate(-90deg) translate3d(${topScroller}px, 0px, 0px)`;
+  })
+});
+

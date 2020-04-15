@@ -29,6 +29,13 @@ nav {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   background-color: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.scrolled {
+  -webkit-box-shadow: 0 3px 4px #eeeeee;
+          box-shadow: 0 3px 4px #eeeeee;
 }
 
 .logo {
@@ -212,7 +219,7 @@ nav {
   font-family: "Lora", serif;
   color: #c1c1c1;
   font-size: 40px;
-  opacity: 0.6;
+  opacity: 0.3;
 }
 
 .side-asset {
@@ -331,7 +338,7 @@ nav {
   font-family: "Lora", serif;
   color: #c1c1c1;
   font-size: 40px;
-  opacity: 0.6;
+  opacity: 0.3;
 }
 
 .side-asset-about {

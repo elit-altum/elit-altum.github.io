@@ -10,7 +10,7 @@
   font-family: $header-font;
   color: $light-grey;
   font-size: 40px;
-  opacity: 0.3;
+  opacity: 0.6;
 }
 
 .side-asset-about {
@@ -51,6 +51,7 @@
   .side-navigator-about {
     top: 20%;
     font-size: 50px;
+    opacity:0.8;
   }
 
   .about__main {
@@ -83,6 +84,7 @@
   .side-navigator-about {
     top: 45%;
     font-size: 50px;
+    opacity:0.8;
   }
 
   .about__main {

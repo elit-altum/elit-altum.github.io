@@ -39,8 +39,9 @@ nav {
           box-shadow: 0 3px 4px #eeeeee;
 }
 
-.logo {
+.logo a {
   color: #000;
+  text-decoration: none;
   margin-left: 30px;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -218,7 +219,7 @@ nav {
   font-family: "Lora", serif;
   color: #c1c1c1;
   font-size: 40px;
-  opacity: 0.3;
+  opacity: 0.6;
 }
 
 .side-asset {
@@ -274,6 +275,7 @@ nav {
   .side-navigator {
     top: 20%;
     font-size: 50px;
+    opacity: 0.8;
   }
   .hero__main-img img {
     width: 250px;
@@ -296,6 +298,7 @@ nav {
   .side-navigator {
     top: 45%;
     font-size: 50px;
+    opacity: 0.8;
   }
   .hero__main {
     -webkit-box-orient: horizontal;
@@ -337,7 +340,7 @@ nav {
   font-family: "Lora", serif;
   color: #c1c1c1;
   font-size: 40px;
-  opacity: 0.3;
+  opacity: 0.6;
 }
 
 .side-asset-about {
@@ -379,6 +382,7 @@ nav {
   .side-navigator-about {
     top: 20%;
     font-size: 50px;
+    opacity: 0.8;
   }
   .about__main {
     margin-top: 0;
@@ -405,6 +409,7 @@ nav {
   .side-navigator-about {
     top: 45%;
     font-size: 50px;
+    opacity: 0.8;
   }
   .about__main {
     margin-top: 0;
@@ -431,6 +436,7 @@ nav {
   position: relative;
   min-width: 100vw;
   min-height: 100vh;
+  padding-top: 10vh;
 }
 
 .side-navigator-projects {
@@ -445,7 +451,7 @@ nav {
   font-family: "Lora", serif;
   color: #c1c1c1;
   font-size: 35px;
-  opacity: 0.3;
+  opacity: 0.6;
   z-index: 1;
 }
 
@@ -551,6 +557,7 @@ nav {
   .side-navigator-projects {
     right: -60px;
     bottom: 15%;
+    opacity: 0.8;
   }
   .project-card {
     -webkit-box-orient: horizontal;
@@ -600,8 +607,9 @@ nav {
 @media only screen and (min-width: 930px) {
   .side-navigator-projects {
     right: -10px;
-    bottom: 80%;
+    bottom: 75%;
     font-size: 50px;
+    opacity: 0.8;
   }
   .project-card {
     -webkit-box-orient: horizontal;

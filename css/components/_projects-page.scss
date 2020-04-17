@@ -2,6 +2,7 @@
   position: relative;
   min-width: 100vw;
   min-height: 100vh;
+  padding-top: 10vh;
 }
 
 .side-navigator-projects {
@@ -15,7 +16,7 @@
   font-family: $header-font;
   color: $light-grey;
   font-size: 35px;
-  opacity: 0.3;
+  opacity: 0.6;
   z-index: 1;
 }
 
@@ -107,6 +108,7 @@
   .side-navigator-projects {
     right: -60px;
     bottom: 15%;
+    opacity: 0.8;
   }
 
   .project-card {
@@ -151,8 +153,9 @@
 @media only screen and (min-width: 930px) {
   .side-navigator-projects {
     right: -10px;
-    bottom: 80%;
+    bottom: 75%;
     font-size: 50px;
+    opacity: 0.8;
   }
 
   .project-card {

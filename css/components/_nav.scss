@@ -18,8 +18,9 @@ nav {
   box-shadow: 0 3px 4px lighten($grey, 27%);
 }
 
-.logo {
+.logo a{
   color: #000;
+  text-decoration: none;
   margin-left: 30px;
   text-transform: uppercase;
   letter-spacing: 5px;

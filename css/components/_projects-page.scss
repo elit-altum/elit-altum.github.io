@@ -1,0 +1,194 @@
+.projects-page {
+  position: relative;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.side-navigator-projects {
+  display: block;
+  float: right;
+  position: absolute;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  right: -60px;
+  top: 180%;
+  font-family: $header-font;
+  color: $light-grey;
+  font-size: 40px;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.projects__main {
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+}
+
+.project-info {
+  z-index: 99;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  margin: 0 40px;
+  margin-bottom: 60px;
+}
+
+.project-card-reverse {
+  display: flex;
+  flex-direction: column;
+  margin: 0 40px;
+  margin-bottom: 60px;
+}
+
+.project-header {
+  font-family: $header-font;
+  color: $accent-color;
+  font-size: 30px;
+  text-transform: capitalize;
+  margin-top: 20px;
+}
+
+.project-image img{
+  width: 100%;
+  z-index: 99;
+}
+
+.project-stack {
+  text-align: right;
+  font-family: $mono-font;
+  font-size: 13px;
+  color: $grey;
+  margin-top: 20px;
+}
+
+.project-details {
+  font-family: sans-serif;
+  color: $text-color;
+  margin-top: 30px;
+  font-size: 17px;
+  padding-right: 20px;
+}
+
+.project-links {
+  margin-top: 30px;
+  position: relative;
+  display: block;
+  flex-direction: column;
+
+  a {
+    display: table;
+    margin-top: 8px;
+    text-decoration: none;
+    color: $accent-color;
+    font-family: $mono-font;
+    padding-bottom: 3px;
+    font-size: 14px;
+    &:hover {
+      border: none;
+      border-bottom: 2px $accent-color dashed;
+    }
+  }
+}
+
+// css for tablets
+@media only screen and (min-width: 700px) {
+  .side-navigator-projects {
+    right: -60px;
+    top: 3%;
+  }
+
+  .project-card {
+    flex-direction: row;
+  }
+
+  .project-card-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .project-image {
+    flex: 2;
+    align-self: center;
+  }
+
+  .project-info {
+    flex: 3;
+    margin: 0 40px;
+    align-self: center;
+  }
+
+  .project-header {
+    margin-top: 0;
+  }
+
+  .project-stack {
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  .project-links {
+    margin-top: 20px;
+
+    a {
+      margin-top: 4px;
+    }
+  }
+}
+
+// css for desktops and wider screens
+@media only screen and (min-width: 930px) {
+  .side-navigator-projects {
+    right: -10px;
+    top: 20%;
+  }
+
+  .project-card {
+    flex-direction: row;
+    margin-right: 12vw;
+    margin-left: 12vw;
+    margin-bottom: 80px;
+  }
+
+  .project-card-reverse {
+    flex-direction: row-reverse;
+    margin-right: 12vw;
+    margin-left: 12vw;
+    margin-bottom: 80px;
+  }
+
+  .project-image {
+    flex: 2;
+    align-self: center;
+  }
+
+  .project-info {
+    flex: 5;
+    margin: 0 40px;
+  }
+
+  .project-header {
+    margin-top: 0;
+    font-size: 36px;
+  }
+
+  .project-stack {
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .project-details {
+    font-size: 17px;
+    line-height: 1.8em;
+  }
+
+  .project-links {
+    margin-top: 30px;
+
+    a {
+      margin-top: 8px;
+    }
+  }
+}

@@ -40,7 +40,7 @@ window.addEventListener('scroll', () => {
   // for side-navigation
   const sides = document.querySelectorAll('.parallax');
   sides.forEach( (side, index) => {
-    let topScroller = (-0.08 * window.scrollY) / ((index + 1))
+    let topScroller = (-0.095 * window.scrollY) / ((index + 1))
     side.style.transform = `rotate(-90deg) translate3d(${topScroller}px, 0px, 0px)`;
   })
 });

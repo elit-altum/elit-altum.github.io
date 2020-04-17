@@ -57,13 +57,9 @@ nav {
 .burger div {
   margin-top: 5px;
   width: 23px;
-  height: 3.2px;
-  background-color: $grey;
+  height: 3px;
+  background-color: $text-color;
   transition: all 0.3s ease;
-
-  &:nth-child(2) {
-    width: 18px;
-  }
 }
 
 @media screen and (max-width : 768px) {
@@ -127,7 +123,8 @@ nav {
 /* for burger animation */
 
 .toggle .line1 {
-  transform: rotate(405deg) translate(6px, 6px);
+  transform: rotate(45deg) translate(5.5px, 6px);
+  width: 18px;
 }
 
 .toggle .line2 {
@@ -136,5 +133,6 @@ nav {
 }
 
 .toggle .line3 {
-  transform: rotate(-405deg) translate(6px, -6px);
+  transform: rotate(-45deg) translate(5.5px, -6px);
+  width: 18px;
 }

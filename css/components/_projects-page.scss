@@ -11,10 +11,10 @@
   transform: rotate(-90deg);
   white-space: nowrap;
   right: -60px;
-  top: 180%;
+  bottom: 30%;
   font-family: $header-font;
   color: $light-grey;
-  font-size: 40px;
+  font-size: 35px;
   opacity: 0.3;
   z-index: 1;
 }
@@ -96,11 +96,17 @@
   }
 }
 
+@media only screen and (min-width: 400px) {
+  .side-navigator-projects {
+    bottom: 24%;
+  }
+}
+
 // css for tablets
 @media only screen and (min-width: 700px) {
   .side-navigator-projects {
     right: -60px;
-    top: 3%;
+    bottom: 15%;
   }
 
   .project-card {
@@ -145,7 +151,7 @@
 @media only screen and (min-width: 930px) {
   .side-navigator-projects {
     right: -10px;
-    top: 10%;
+    bottom: 80%;
     font-size: 50px;
   }
 

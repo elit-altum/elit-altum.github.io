@@ -441,10 +441,10 @@ nav {
           transform: rotate(-90deg);
   white-space: nowrap;
   right: -60px;
-  top: 180%;
+  bottom: 30%;
   font-family: "Lora", serif;
   color: #c1c1c1;
-  font-size: 40px;
+  font-size: 35px;
   opacity: 0.3;
   z-index: 1;
 }
@@ -541,10 +541,16 @@ nav {
   border-bottom: 2px #2ECC71 dashed;
 }
 
+@media only screen and (min-width: 400px) {
+  .side-navigator-projects {
+    bottom: 24%;
+  }
+}
+
 @media only screen and (min-width: 700px) {
   .side-navigator-projects {
     right: -60px;
-    top: 3%;
+    bottom: 15%;
   }
   .project-card {
     -webkit-box-orient: horizontal;
@@ -594,7 +600,7 @@ nav {
 @media only screen and (min-width: 930px) {
   .side-navigator-projects {
     right: -10px;
-    top: 10%;
+    bottom: 80%;
     font-size: 50px;
   }
   .project-card {

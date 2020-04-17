@@ -46,7 +46,7 @@
 .project-header {
   font-family: $header-font;
   color: $accent-color;
-  font-size: 30px;
+  font-size: 32px;
   text-transform: capitalize;
   margin-top: 20px;
 }
@@ -65,10 +65,11 @@
 }
 
 .project-details {
-  font-family: sans-serif;
-  color: $text-color;
+  font-family: $secondary-font;
+  font-weight: 400;
+  color: lighten($text-color, 15%);
   margin-top: 30px;
-  font-size: 17px;
+  font-size: 16px;
   padding-right: 20px;
 }
 
@@ -80,14 +81,16 @@
 
   a {
     display: table;
+    box-sizing: content-box;
     margin-top: 8px;
     text-decoration: none;
     color: $accent-color;
     font-family: $mono-font;
     padding-bottom: 3px;
-    font-size: 14px;
+    font-size: 14.5px;
+    border: none;
+    border-bottom: 2px transparent dashed;
     &:hover {
-      border: none;
       border-bottom: 2px $accent-color dashed;
     }
   }
@@ -133,6 +136,7 @@
 
     a {
       margin-top: 4px;
+      font-size: 15px;
     }
   }
 }
@@ -141,7 +145,8 @@
 @media only screen and (min-width: 930px) {
   .side-navigator-projects {
     right: -10px;
-    top: 20%;
+    top: 10%;
+    font-size: 50px;
   }
 
   .project-card {
@@ -170,7 +175,7 @@
 
   .project-header {
     margin-top: 0;
-    font-size: 36px;
+    font-size: 38px;
   }
 
   .project-stack {
@@ -180,8 +185,7 @@
   }
 
   .project-details {
-    font-size: 17px;
-    line-height: 1.8em;
+    font-size: 17.6px;
   }
 
   .project-links {
@@ -189,6 +193,7 @@
 
     a {
       margin-top: 8px;
+      font-size: 15px;
     }
   }
 }

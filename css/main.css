@@ -336,7 +336,7 @@ nav {
           transform: rotate(-90deg);
   white-space: nowrap;
   left: -40px;
-  top: 10%;
+  top: 5%;
   font-family: "Lora", serif;
   color: #c1c1c1;
   font-size: 40px;
@@ -346,7 +346,7 @@ nav {
 .side-asset-about {
   position: absolute;
   right: 30px;
-  top: 25%;
+  top: 45%;
 }
 
 .side-asset-about img {
@@ -378,9 +378,56 @@ nav {
   color: #333;
 }
 
+.about__tech-stack {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about__tech-stack:nth-last-child(1)::after {
+  content: ' ';
+}
+
+.stack-division {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+}
+
+.stack-division::after {
+  content: ' |';
+  font-size: 20px;
+  color: #a9a9a9;
+}
+
+.stack-division img {
+  width: 22px;
+  margin-right: 6px;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.stack-division img:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+.about__tech-stack div:nth-last-child(1)::after {
+  content: '';
+}
+
 @media only screen and (min-width: 760px) {
   .side-navigator-about {
-    top: 20%;
+    top: 10%;
     font-size: 50px;
     opacity: 0.8;
   }
@@ -388,13 +435,16 @@ nav {
     margin-top: 0;
   }
   .about__main-text {
-    margin: 0 40px 0 40px;
+    margin: 0 60px 0 12vw;
   }
   .about__main-text h2 {
     font-size: 45px;
   }
   .about__main-text p {
     font-size: 20px;
+  }
+  .stack-division img {
+    width: 30px;
   }
   .side-asset-about {
     top: 30%;
@@ -405,7 +455,7 @@ nav {
   }
 }
 
-@media only screen and (min-width: 930px) {
+@media only screen and (min-width: 900px) {
   .side-navigator-about {
     top: 45%;
     font-size: 50px;
@@ -422,6 +472,9 @@ nav {
   }
   .about__main-text p {
     font-size: 20px;
+  }
+  .stack-division img {
+    width: 34px;
   }
   .side-asset-about {
     top: 30%;

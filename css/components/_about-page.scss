@@ -6,7 +6,7 @@
   transform: rotate(-90deg);
   white-space: nowrap;
   left: -40px;
-  top: 10%;
+  top: 5%;
   font-family: $header-font;
   color: $light-grey;
   font-size: 40px;
@@ -16,7 +16,7 @@
 .side-asset-about {
   position: absolute;
   right: 30px;
-  top: 25%;
+  top: 45%;
 
   img {
     width: 125px;
@@ -46,10 +46,46 @@
   }
 }
 
+.about__tech-stack {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  &:nth-last-child(1)::after {
+    content: ' ';
+  }
+}
+
+.stack-division {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  &::after{
+    content: ' |';
+    font-size: 20px;
+    color: $grey;
+  }
+  img {
+    width: 22px;
+    margin-right: 6px;
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+}
+
+.about__tech-stack div{
+  &:nth-last-child(1)::after {
+    content: '';
+  }
+}
+
+
 // css for tablets
 @media only screen and (min-width: 760px) {
   .side-navigator-about {
-    top: 20%;
+    top: 10%;
     font-size: 50px;
     opacity:0.8;
   }
@@ -59,13 +95,19 @@
   }
 
   .about__main-text {
-    margin: 0 40px 0 40px;
+    margin: 0 60px 0 12vw;
     h2 {
       font-size: 45px;
     }
 
     p {
       font-size: 20px;
+    }
+  }
+
+  .stack-division {
+    img {
+      width: 30px;
     }
   }
 
@@ -80,7 +122,7 @@
 }
 
 // css for laptops/wider screens
-@media only screen and (min-width: 930px) {
+@media only screen and (min-width: 900px) {
   .side-navigator-about {
     top: 45%;
     font-size: 50px;
@@ -99,6 +141,12 @@
 
     p {
       font-size: 20px;
+    }
+  }
+
+  .stack-division {
+    img {
+      width: 34px;
     }
   }
 

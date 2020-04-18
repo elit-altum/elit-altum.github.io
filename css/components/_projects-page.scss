@@ -22,13 +22,18 @@
 
 .projects__main {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   z-index: 999;
 }
 
 .project-info {
   z-index: 99;
 }
+
+.project-info-reverse {
+  z-index: 99;
+}
+
 
 .project-card {
   display: flex;
@@ -52,7 +57,7 @@
   margin-top: 20px;
 }
 
-.project-image img{
+.project-image img {
   width: 100%;
   z-index: 99;
 }
@@ -91,15 +96,17 @@
     font-size: 14.5px;
     border: none;
     border-bottom: 2px transparent dashed;
+
     &:hover {
       border-bottom: 2px $accent-color dashed;
     }
   }
 }
 
+// for larger mobiles
 @media only screen and (min-width: 400px) {
   .side-navigator-projects {
-    bottom: 24%;
+    bottom: 30%;
   }
 }
 
@@ -107,7 +114,7 @@
 @media only screen and (min-width: 700px) {
   .side-navigator-projects {
     right: -60px;
-    bottom: 15%;
+    bottom: 40%;
     opacity: 0.8;
   }
 
@@ -126,7 +133,13 @@
 
   .project-info {
     flex: 3;
-    margin: 0 40px;
+    margin-left: 40px;
+    align-self: center;
+  }
+
+  .project-info-reverse {
+    flex: 3;
+    margin-right: 40px;
     align-self: center;
   }
 
@@ -179,7 +192,12 @@
 
   .project-info {
     flex: 5;
-    margin: 0 40px;
+    margin-left: 40px;
+  }
+
+  .project-info-reverse {
+    flex: 5;
+    margin-right: 40px;
   }
 
   .project-header {

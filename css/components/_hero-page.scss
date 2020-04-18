@@ -1,137 +1,137 @@
 // writing mobile first css
 .section-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  min-width: 100vw;
-  min-height: 100vh;
-  width: 100vw;
-  height: 92vh;
-  overflow-x: hidden;
-  overflow-y: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	min-width: 100vw;
+	min-height: 100vh;
+	width: 100vw;
+	height: 92vh;
+	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 .side-navigator {
-  display: block;
-  float: left;
-  position: absolute;
-  transform: rotate(-90deg);
-  white-space: nowrap;
-  left: -40px;
-  top: 130px;
-  font-family: $header-font;
-  color: $light-grey;
-  font-size: 40px;
-  opacity: 0.6;
+	display: block;
+	float: left;
+	position: absolute;
+	transform: rotate(-90deg);
+	white-space: nowrap;
+	left: -40px;
+	top: 130px;
+	font-family: $header-font;
+	color: $light-grey;
+	font-size: 40px;
+	opacity: 0.6;
 }
 
 .side-asset {
-  position: absolute;
-  right: 25px;
-  bottom: 10px;
+	position: absolute;
+	right: 25px;
+	bottom: 10px;
 
-  img {
-    width: 60px;
-  }
+	img {
+		width: 60px;
+	}
 }
 
 .hero__main {
-  z-index: 99;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+	z-index: 99;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .hero__main-img img {
-  width: 200px;
-  border-radius: 50%;
+	width: 200px;
+	border-radius: 50%;
 }
 
 .hero__main-text {
-  text-align: center;
-  margin-top: 20px;
+	text-align: center;
+	margin-top: 20px;
 
-  h2 {
-    font-family: $header-font;
-    font-size: 34px;
-  }
+	h2 {
+		font-family: $header-font;
+		font-size: 34px;
+	}
 
-  p {
-    margin-top: 10px;
-    font-family: $mono-font;
-    font-size: 14px;
-    color: $text-color;
-  }
+	p {
+		margin-top: 10px;
+		font-family: $mono-font;
+		font-size: 14px;
+		color: $text-color;
+	}
 }
 
 // css for tablets
 @media only screen and (min-width: 760px) {
-  .side-navigator {
-    top: 20%;
-    font-size: 50px;
-    opacity: 0.8;
-  }
+	.side-navigator {
+		top: 20%;
+		font-size: 50px;
+		opacity: 0.8;
+	}
 
-  .hero__main-img img {
-    width: 250px;
-  }
+	.hero__main-img img {
+		width: 250px;
+	}
 
-  .hero__main-text {
-    h2 {
-      font-size: 45px;
-    }
+	.hero__main-text {
+		h2 {
+			font-size: 45px;
+		}
 
-    p {
-      font-size: 18px;
-    }
-  }
+		p {
+			font-size: 18px;
+		}
+	}
 
-  .side-asset {
-    right: 40px;
+	.side-asset {
+		right: 40px;
 
-    img {
-      width: 80px;
-    }
-  }
+		img {
+			width: 80px;
+		}
+	}
 }
 
 // css for laptops/wider screens
 @media only screen and (min-width: 900px) {
-  .side-navigator {
-    top: 45%;
-    font-size: 50px;
-    opacity: 0.8;
-  }
+	.side-navigator {
+		top: 45%;
+		font-size: 50px;
+		opacity: 0.8;
+	}
 
-  .hero__main {
-    flex-direction: row;
-  }
+	.hero__main {
+		flex-direction: row;
+	}
 
-  .hero__main-img img {
-    width: 300px;
-  }
+	.hero__main-img img {
+		width: 300px;
+	}
 
-  .hero__main-text {
-    text-align: left;
-    margin-top: 0;
-    margin-left: 50px;
+	.hero__main-text {
+		text-align: left;
+		margin-top: 0;
+		margin-left: 50px;
 
-    h2 {
-      font-size: 45px;
-    }
+		h2 {
+			font-size: 45px;
+		}
 
-    p {
-      font-size: 18px;
-    }
-  }
+		p {
+			font-size: 18px;
+		}
+	}
 
-  .side-asset {
-    right: 40px;
+	.side-asset {
+		right: 40px;
 
-    img {
-      width: 100px;
-    }
-  }
+		img {
+			width: 100px;
+		}
+	}
 }

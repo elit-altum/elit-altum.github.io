@@ -1,0 +1,60 @@
+// writing mobile first css
+.side-navigator-contact {
+	display: block;
+	float: left;
+	position: absolute;
+	transform: rotate(-90deg);
+	white-space: nowrap;
+	left: -40px;
+	top: 5%;
+	font-family: $header-font;
+	color: $light-grey;
+	font-size: 32px;
+	opacity: 0.6;
+}
+
+.social-media {
+	margin-top: 20px;
+	a {
+		float: left;
+	}
+	i {
+		font-size: 25px;
+		color: lighten($text-color, 30%);
+		margin-right: 10px;
+		transition: all 0.3s ease;
+		&:hover {
+			color: $accent-color;
+		}
+	}
+}
+
+// for larger mobiles
+@media only screen and (min-width: 400px) {
+	.side-navigator-contact {
+		font-size: 40px;
+	}
+}
+
+// css for tablets
+@media only screen and (min-width: 760px) {
+	.side-navigator-contact {
+		top: 8%;
+		font-size: 50px;
+		opacity: 0.8;
+	}
+	.social-media {
+		i {
+			font-size: 27px;
+		}
+	}
+}
+
+// css for laptops/wider screens
+@media only screen and (min-width: 900px) {
+	.side-navigator-contact {
+		top: 37%;
+		font-size: 50px;
+		opacity: 0.8;
+	}
+}

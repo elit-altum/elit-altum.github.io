@@ -46,3 +46,8 @@ window.addEventListener("scroll", () => {
 		side.style.transform = `rotate(-90deg) translate3d(${topScroller}px, 0px, 0px)`;
 	});
 });
+
+// for opening mail in a new window
+const openMail = () => {
+	window.open("mailto:manan.sharma311@gmail.com");
+};

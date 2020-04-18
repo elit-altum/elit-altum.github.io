@@ -22,7 +22,7 @@
 	top: 130px;
 	font-family: $header-font;
 	color: $light-grey;
-	font-size: 40px;
+	font-size: 32px;
 	opacity: 0.6;
 }
 
@@ -63,6 +63,14 @@
 		font-family: $mono-font;
 		font-size: 14px;
 		color: $text-color;
+	}
+}
+
+// for larger mobiles
+@media only screen and (min-width: 400px) {
+	.side-navigator {
+		top: 130px;
+		font-size: 40px;
 	}
 }
 

@@ -5,11 +5,11 @@
 	position: absolute;
 	transform: rotate(-90deg);
 	white-space: nowrap;
-	left: -40px;
+	left: -20px;
 	top: 5%;
 	font-family: $header-font;
 	color: $light-grey;
-	font-size: 40px;
+	font-size: 30px;
 	opacity: 0.6;
 }
 
@@ -31,7 +31,7 @@
 
 .about__main-text {
 	text-align: left;
-	margin: 20px 30px 0 30px;
+	margin: 0px 30px 0 30px;
 
 	h2 {
 		font-family: $header-font;
@@ -82,6 +82,13 @@
 .about__tech-stack div {
 	&:nth-last-child(1)::after {
 		content: "";
+	}
+}
+
+// for larger mobiles
+@media only screen and (min-width: 400px) {
+	.side-navigator-about {
+		font-size: 40px;
 	}
 }
 

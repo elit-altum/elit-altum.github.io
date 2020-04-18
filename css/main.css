@@ -74,7 +74,7 @@ nav {
 }
 
 .nav-links a:hover {
-  color: #2ECC71;
+  color: #2ecc71;
 }
 
 .burger {
@@ -218,7 +218,7 @@ nav {
   top: 130px;
   font-family: "Lora", serif;
   color: #c1c1c1;
-  font-size: 40px;
+  font-size: 32px;
   opacity: 0.6;
 }
 
@@ -269,6 +269,13 @@ nav {
   font-family: "Roboto Mono", monospace;
   font-size: 14px;
   color: #333;
+}
+
+@media only screen and (min-width: 400px) {
+  .side-navigator {
+    top: 130px;
+    font-size: 40px;
+  }
 }
 
 @media only screen and (min-width: 760px) {
@@ -335,11 +342,11 @@ nav {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   white-space: nowrap;
-  left: -40px;
+  left: -20px;
   top: 5%;
   font-family: "Lora", serif;
   color: #c1c1c1;
-  font-size: 40px;
+  font-size: 30px;
   opacity: 0.6;
 }
 
@@ -363,7 +370,7 @@ nav {
 
 .about__main-text {
   text-align: left;
-  margin: 20px 30px 0 30px;
+  margin: 0px 30px 0 30px;
 }
 
 .about__main-text h2 {
@@ -388,7 +395,7 @@ nav {
 }
 
 .about__tech-stack:nth-last-child(1)::after {
-  content: ' ';
+  content: " ";
 }
 
 .stack-division {
@@ -402,7 +409,7 @@ nav {
 }
 
 .stack-division::after {
-  content: ' |';
+  content: " |";
   font-size: 20px;
   color: #a9a9a9;
 }
@@ -422,7 +429,13 @@ nav {
 }
 
 .about__tech-stack div:nth-last-child(1)::after {
-  content: '';
+  content: "";
+}
+
+@media only screen and (min-width: 400px) {
+  .side-navigator-about {
+    font-size: 40px;
+  }
 }
 
 @media only screen and (min-width: 760px) {
@@ -548,7 +561,7 @@ nav {
 
 .project-header {
   font-family: "Lora", serif;
-  color: #2ECC71;
+  color: #2ecc71;
   font-size: 32px;
   text-transform: capitalize;
   margin-top: 20px;
@@ -592,7 +605,7 @@ nav {
           box-sizing: content-box;
   margin-top: 8px;
   text-decoration: none;
-  color: #2ECC71;
+  color: #2ecc71;
   font-family: "Roboto Mono", monospace;
   padding-bottom: 3px;
   font-size: 14.5px;
@@ -601,7 +614,7 @@ nav {
 }
 
 .project-links a:hover {
-  border-bottom: 2px #2ECC71 dashed;
+  border-bottom: 2px #2ecc71 dashed;
 }
 
 @media only screen and (min-width: 400px) {
@@ -733,6 +746,66 @@ nav {
   .project-links a {
     margin-top: 8px;
     font-size: 15px;
+  }
+}
+
+.side-navigator-contact {
+  display: block;
+  float: left;
+  position: absolute;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  white-space: nowrap;
+  left: -40px;
+  top: 5%;
+  font-family: "Lora", serif;
+  color: #c1c1c1;
+  font-size: 32px;
+  opacity: 0.6;
+}
+
+.social-media {
+  margin-top: 20px;
+}
+
+.social-media a {
+  float: left;
+}
+
+.social-media i {
+  font-size: 25px;
+  color: gray;
+  margin-right: 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.social-media i:hover {
+  color: #2ecc71;
+}
+
+@media only screen and (min-width: 400px) {
+  .side-navigator-contact {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 760px) {
+  .side-navigator-contact {
+    top: 8%;
+    font-size: 50px;
+    opacity: 0.8;
+  }
+  .social-media i {
+    font-size: 27px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .side-navigator-contact {
+    top: 37%;
+    font-size: 50px;
+    opacity: 0.8;
   }
 }
 /*# sourceMappingURL=main.css.map */

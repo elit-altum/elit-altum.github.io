@@ -405,7 +405,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 10px;
+  margin-right: 2px;
 }
 
 .stack-division::after {
@@ -416,7 +416,7 @@ nav {
 
 .stack-division img {
   width: 28px;
-  margin-right: 6px;
+  margin-right: 2px;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
   -webkit-transition: all 0.3s ease;
@@ -435,6 +435,7 @@ nav {
 @media only screen and (min-width: 400px) {
   .side-navigator-about {
     font-size: 40px;
+    left: -37px;
   }
 }
 
@@ -787,6 +788,7 @@ nav {
 @media only screen and (min-width: 400px) {
   .side-navigator-contact {
     font-size: 40px;
+    left: -55px;
   }
 }
 

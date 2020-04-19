@@ -758,7 +758,7 @@ nav {
           transform: rotate(-90deg);
   white-space: nowrap;
   left: -40px;
-  top: 5%;
+  top: -2%;
   font-family: "Lora", serif;
   color: #c1c1c1;
   font-size: 32px;
@@ -785,10 +785,86 @@ nav {
   color: #2ecc71;
 }
 
+.contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 30px;
+}
+
+.email-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.email-info i {
+  font-size: 20px;
+  color: #333;
+}
+
+.email-info i::after {
+  content: " |";
+  margin-left: 5px;
+}
+
+.email-info div {
+  font-family: "Roboto Mono", monospace;
+  color: #333;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.github-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+.github-info i {
+  font-size: 22px;
+  color: #333;
+}
+
+.github-info i::after {
+  content: " |";
+  margin-left: 5px;
+}
+
+.github-info a {
+  text-decoration: none;
+  font-family: "Roboto Mono", monospace;
+  color: #333;
+  font-size: 14px;
+  margin-left: 10px;
+  border-bottom: 2px transparent dashed;
+}
+
+.github-info a:hover {
+  color: #2ecc71;
+  border-bottom: 2px #2ecc71 dashed;
+}
+
 @media only screen and (min-width: 400px) {
   .side-navigator-contact {
-    font-size: 40px;
+    font-size: 38px;
     left: -55px;
+    top: 0%;
   }
 }
 
@@ -801,6 +877,18 @@ nav {
   .social-media i {
     font-size: 27px;
   }
+  .email-info i {
+    font-size: 22px;
+  }
+  .email-info div {
+    font-size: 16px;
+  }
+  .github-info i {
+    font-size: 24px;
+  }
+  .github-info a {
+    font-size: 16px;
+  }
 }
 
 @media only screen and (min-width: 900px) {
@@ -808,6 +896,48 @@ nav {
     top: 37%;
     font-size: 50px;
     opacity: 0.8;
+  }
+  .email-info i {
+    font-size: 24px;
+  }
+  .email-info div {
+    font-size: 18px;
+  }
+  .github-info i {
+    font-size: 26px;
+  }
+  .github-info a {
+    font-size: 18px;
+  }
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100vw;
+  height: auto;
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+footer p {
+  padding: 12px 0px;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Lora", serif;
+}
+
+@media only screen and (min-width: 760px) {
+  footer p {
+    padding: 18px 0px;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  footer p {
+    padding: 20px 0px;
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=main.css.map */

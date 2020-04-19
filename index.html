@@ -34,6 +34,7 @@
   </nav>
 
   <!-- Hero Page -->
+  <a name="home"></a>
   <div class="section-page" id="home">
     <div class="side-navigator parallax">
       <p>00.Intro</p>
@@ -53,6 +54,7 @@
   </div>
 
   <!-- About Page -->
+  <a name="about"></a>
   <div class="section-page" id="about">
     <div class="side-navigator-about parallax">
       <p>01.About</p>
@@ -98,6 +100,7 @@
   </div>
 
   <!-- Projects Page -->
+  <a name="projects"></a>
   <div class="projects-page" id="projects">
     <div class="side-navigator-projects parallax">
       <p>02.Projects</p>
@@ -190,6 +193,7 @@
   </div>
 
   <!-- Contact Page -->
+  <a name="contact"></a>
   <div class="section-page" id="contact">
     <div class="side-navigator-contact parallax">
       <p>03.Contact</p>
@@ -199,14 +203,11 @@
         <h2>Get in touch!</h2>
         <p>
           Do you have a great idea? Do you want to work together on something exciting? Or can you suggest some really good music?
-          <br>Whatever be the case I'd be happy to listen from you!
+          <br>Whatever be the case I'd be happy to hear from you!
           <br><br>
           Hit me up at:
         </p>
         <div class="social-media">
-          <a href="https://github.com/elit-altum" target="_blank">
-            <i class="fa fa-github" aria-hidden="true" title="Github"></i>
-          </a>
           <a href="https://www.linkedin.com/in/manan-sharma-8502b9199/" target="_blank">
             <i class="fa fa-linkedin-square" aria-hidden="true" title="LinkedIn"></i>
           </a>
@@ -215,23 +216,44 @@
           </a>
           <i class="fa fa-envelope" aria-hidden="true" onclick="openMail()" title="Email"></i>
         </div>
+        <div class="contact-info">
+          <div class="email-info">
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <div>
+              manan.sharma311@gmail.com
+              <br>
+              manan_bt2k19@dtu.ac.in
+            </div>
+          </div>
+          <div class="github-info">
+            <i class="fa fa-github" aria-hidden="true"></i>
+            <a href="https://github.com/elit-altum">
+              Elit-Altum
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
+  <!-- Footer -->
+  <footer>
+    <p>
+      Made with ❤️ by Manan Sharma.
+    </p>
+  </footer>
+
   <script src="./js/index.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js">
+  <script
+			  src="https://code.jquery.com/jquery-3.5.0.min.js"
+			  integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+        crossorigin="anonymous">
   </script>
+  <script src="./js/scroll.js"></script>
   <script>
     // rellax initializing for parallax effects 
     var rellax = new Rellax('.rellax');
-
-    // smooth-scroll
-    var scroll = new SmoothScroll('a[href*="#"]', {
-      easing: 'easeInOutQuint',
-      speed: 800
-    });
   </script>
 </body>
 

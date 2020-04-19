@@ -786,13 +786,7 @@ nav {
 }
 
 .contact-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  float: right;
   margin-top: 30px;
 }
 
@@ -812,16 +806,13 @@ nav {
   color: #333;
 }
 
-.email-info i::after {
-  content: " |";
-  margin-left: 5px;
-}
-
 .email-info div {
   font-family: "Roboto Mono", monospace;
   color: #333;
   font-size: 14px;
-  margin-left: 10px;
+  margin-right: 10px;
+  border-right: 1px solid gray;
+  padding-right: 10px;
 }
 
 .github-info {
@@ -833,7 +824,10 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 10px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 20px;
 }
 
 .github-info i {
@@ -841,23 +835,18 @@ nav {
   color: #333;
 }
 
-.github-info i::after {
-  content: " |";
-  margin-left: 5px;
-}
-
 .github-info a {
   text-decoration: none;
   font-family: "Roboto Mono", monospace;
   color: #333;
   font-size: 14px;
-  margin-left: 10px;
-  border-bottom: 2px transparent dashed;
+  margin-right: 10px;
+  border-right: 1px solid gray;
+  padding-right: 10px;
 }
 
 .github-info a:hover {
   color: #2ecc71;
-  border-bottom: 2px #2ecc71 dashed;
 }
 
 @media only screen and (min-width: 400px) {

@@ -40,7 +40,7 @@ nav {
 }
 
 .logo a {
-  color: #000;
+  color: #555;
   text-decoration: none;
   margin-left: 30px;
   text-transform: uppercase;
@@ -348,7 +348,7 @@ nav {
   font-family: "Lora", serif;
   color: #c1c1c1;
   font-size: 30px;
-  opacity: 0.6;
+  opacity: 0.4;
 }
 
 .side-asset-about {
@@ -519,7 +519,7 @@ nav {
   font-family: "Lora", serif;
   color: #c1c1c1;
   font-size: 35px;
-  opacity: 0.6;
+  opacity: 0.4;
   z-index: 1;
 }
 
@@ -763,7 +763,7 @@ nav {
   font-family: "Lora", serif;
   color: #c1c1c1;
   font-size: 32px;
-  opacity: 0.6;
+  opacity: 0.4;
 }
 
 .social-media {
